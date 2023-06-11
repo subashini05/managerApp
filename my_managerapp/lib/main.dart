@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:my_managerapp/HomePage.dart';
-import 'package:my_managerapp/Login.dart';
-import 'package:my_managerapp/SettingsScreen.dart';
-import 'package:my_managerapp/SplashScreen.dart';
+import 'package:my_managerapp/screens/Login.dart';
+import 'package:my_managerapp/screens/SettingsScreen.dart';
+
+import 'package:my_managerapp/screens/SplashScreen.dart';
 
 void main() {
   runApp(const MyManagerApp());
