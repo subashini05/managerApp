@@ -1,0 +1,55 @@
+name: my_managerapp
+description: A Flutter app
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_lints: ^1.0.0
+
+  cupertino_icons: ^1.0.2
+  google_fonts: ^5.0.0
+  fluttertoast: ^8.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  assets:
+    - lib/assets/images/Vector.png
+    - lib/assets/images/HomePage.png
+    - lib/assets/images/Vector_(4).png
+    - lib/assets/images/Vector_(5).png
+    - lib/assets/images/ComboChart.png
+    - lib/assets/images/Vector_(1).png
+    - lib/assets/images/Ellipse_6.png
+    - lib/assets/images/Ellipse_7.png
+    - lib/assets/images/cross.png
+    - lib/assets/images/Path_121.png
+    - lib/assets/images/Path_122.png
+    - lib/assets/images/Path_123.png
+    - lib/assets/images/Path_124.png
+    - lib/assets/images/splash.png
+    - lib/assets/icons/PHome.png
+    - lib/assets/icons/Add Venture.png
+    - lib/assets/icons/User Shield.png
+    - lib/assets/icons/Contact Us.png
+    - lib/assets/icons/Group.png
+    - lib/assets/icons/policy.png
+    - lib/assets/icons/Lg.png
+
+
+
+
+
+  uses-material-design: true
+
+  # Add any additional dependencies here
