@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_managerapp/HomePage.dart';
-import 'package:my_managerapp/screens/Login.dart';
+import 'package:my_managerapp/Login.dart';
 
 class SettingsPage extends StatelessWidget {
   static const String routeName = '/settings';

@@ -15,8 +15,9 @@ dependencies:
   flutter_lints: ^1.0.0
 
   cupertino_icons: ^1.0.2
-  google_fonts: ^5.0.0
+  google_fonts: ^2.0.0
   fluttertoast: ^8.2.2
+  image_picker: ^0.8.8
 
 dev_dependencies:
   flutter_test:
@@ -46,9 +47,10 @@ flutter:
     - lib/assets/icons/policy.png
     - lib/assets/icons/Lg.png
 
-
-
-
+  fonts:
+    - family: Work Sans
+      fonts:
+        - asset: fonts/WorkSans-Regular.ttf
 
   uses-material-design: true
 
