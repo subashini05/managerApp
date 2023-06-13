@@ -5,7 +5,6 @@ import 'package:my_managerapp/Login.dart';
 class SettingsPage extends StatelessWidget {
   static const String routeName = '/settings';
 
-  // Define your icon image paths here
   final String personIcon = 'lib/assets/icons/PHome.png';
   final String addIcon = 'lib/assets/icons/Add Venture.png';
   final String paymentIcon = 'lib/assets/icons/User Shield.png';
@@ -45,26 +44,22 @@ class SettingsPage extends StatelessWidget {
             child: ListView(
               children: [
                 ListTile(
-                  leading: Image.asset(
-                      personIcon), // Use Image.asset with the image path
+                  leading: Image.asset(personIcon),
                   title: const Text('Profile'),
                   onTap: () {},
                 ),
                 ListTile(
-                  leading: Image.asset(
-                      addIcon), // Use Image.asset with the image path
+                  leading: Image.asset(addIcon),
                   title: const Text('Add Venture'),
                   onTap: () {},
                 ),
                 ListTile(
-                  leading: Image.asset(
-                      paymentIcon), // Use Image.asset with the image path
+                  leading: Image.asset(infoIcon),
                   title: const Text('Payments'),
                   onTap: () {},
                 ),
                 ListTile(
-                  leading: Image.asset(
-                      contactsIcon), // Use Image.asset with the image path
+                  leading: Image.asset(contactsIcon),
                   title: const Text('Contact Us'),
                   onTap: () {},
                 ),
@@ -72,20 +67,18 @@ class SettingsPage extends StatelessWidget {
             ),
           ),
           ListTile(
-            leading:
-                Image.asset(infoIcon), // Use Image.asset with the image path
+            leading: Image.asset(policyIcon),
             title: const Text('About Us'),
             onTap: () {},
           ),
           ListTile(
-            leading:
-                Image.asset(policyIcon), // Use Image.asset with the image path
+            leading: Image.asset(paymentIcon),
             title: const Text('Privacy Policy'),
             onTap: () {},
           ),
           const Expanded(child: SizedBox()),
           Container(
-            margin: const EdgeInsets.only(left: 16, bottom: 16),
+            margin: const EdgeInsets.only(right: 150, bottom: 16),
             child: MaterialButton(
               onPressed: () {
                 _goToLoginPage(context);
@@ -93,8 +86,7 @@ class SettingsPage extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image.asset(
-                      logoutIcon), // Use Image.asset with the image path
+                  Image.asset(logoutIcon),
                   const SizedBox(width: 8),
                   const Text('Log Out'),
                 ],

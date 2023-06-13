@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:my_managerapp/Login.dart';
+
 import 'package:my_managerapp/SettingsScreen.dart';
 import 'package:my_managerapp/SplashScreen.dart';
 import 'package:my_managerapp/Untitled-1.dart';
+import 'package:my_managerapp/project.dart';
 
 void main() {
   runApp(const MyManagerApp());
@@ -22,7 +24,7 @@ class MyManagerApp extends StatelessWidget {
         LoginPage.routeName: (context) => const LoginPage(),
         HomePage.routeName: (context) => HomePage(),
         SettingsPage.routeName: (context) => SettingsPage(),
-        // ProfileScreen.routeName: (context) => ProfileScreen(),
+        //ProfileScreen.routeName: (context) => ProfileScreen(),
       },
     );
   }

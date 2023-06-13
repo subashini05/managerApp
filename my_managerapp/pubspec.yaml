@@ -1,8 +1,6 @@
 name: my_managerapp
 description: A Flutter app
-
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
-
 version: 1.0.0+1
 
 environment:
@@ -13,9 +11,8 @@ dependencies:
     sdk: flutter
 
   flutter_lints: ^1.0.0
-
   cupertino_icons: ^1.0.2
-  google_fonts: ^2.0.0
+  google_fonts: ^2.1.0
   fluttertoast: ^8.2.2
   image_picker: ^0.8.8
 
@@ -46,12 +43,9 @@ flutter:
     - lib/assets/icons/Group.png
     - lib/assets/icons/policy.png
     - lib/assets/icons/Lg.png
-
-  fonts:
-    - family: Work Sans
-      fonts:
-        - asset: fonts/WorkSans-Regular.ttf
+    - lib/assets/images/circle.png
+    - lib/assets/fonts/WorkSans-Regular.ttf
 
   uses-material-design: true
 
-  # Add any additional dependencies here
+# Add any additional dependencies here

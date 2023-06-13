@@ -1,18 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:my_managerapp/SettingsScreen.dart';
 
 class HomePage extends StatelessWidget {
   static const String routeName = '/home';
+
   void _goToSettingsPage(BuildContext context) {
     Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => SettingsPage()),
     );
   }
+
   void _goToProjectPage(BuildContext context) {
+    // Replace SettingsPage() with the appropriate page widget
+    // for navigating to the project page.
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => SettingsPage()),
+      MaterialPageRoute(builder: (context) => ProjectPage()),
     );
   }
 
@@ -24,9 +27,6 @@ class HomePage extends StatelessWidget {
       ),
       builder: (BuildContext context) {
         return Container(
-
-            // MediaQuery.of(context).size.width * 0.8, // Set the desired width
-            child: Container(
           width: 500,
           child: SingleChildScrollView(
             child: Padding(
@@ -38,188 +38,14 @@ class HomePage extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Container(
-                          decoration: const BoxDecoration(
-                            color: Colors.blue,
-                            borderRadius: BorderRadius.only(
-                              topLeft: Radius.circular(18),
-                              bottomLeft: Radius.circular(18),
-                            ),
-                          ),
-                          padding: const EdgeInsets.symmetric(
-                              horizontal: 20, vertical: 5),
-                          child: const Text(
-                            'Income',
-                            style: TextStyle(
-                              fontSize: 20,
-                              color: Colors.white,
-                            ),
-                          ),
-                        ),
-                        Container(
-                          decoration: const BoxDecoration(
-                            color: Colors.green,
-                            borderRadius: BorderRadius.only(
-                              topRight: Radius.circular(18),
-                              bottomRight: Radius.circular(18),
-                            ),
-                          ),
-                          padding: const EdgeInsets.symmetric(
-                              horizontal: 20, vertical: 5),
-                          child: const Text(
-                            'Expense',
-                            style: TextStyle(
-                              fontSize: 20,
-                              color: Colors.white,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                    const SizedBox(height: 10),
-                    Container(
-                      decoration: const BoxDecoration(
-                        border: Border(
-                          bottom: BorderSide(color: Colors.grey),
-                        ),
-                        shape: BoxShape.rectangle,
-                      ),
-                      child: DropdownButtonFormField<String>(
-                        items: <String>['Project 1', 'Project 2', 'Project 3']
-                            .map<DropdownMenuItem<String>>((String value) {
-                          return DropdownMenuItem<String>(
-                            value: value,
-                            child: Text(value),
-                          );
-                        }).toList(),
-                        decoration: const InputDecoration(
-                          labelText: 'Project Name',
-                          border: InputBorder.none,
-                          contentPadding: EdgeInsets.symmetric(horizontal: 10),
-                        ),
-                        onChanged: (String? value) {
-                          // Handle project selection
-                        },
-                      ),
-                    ),
-                    const SizedBox(width: 10),
-                    Row(
-                      children: [
-                        Expanded(
-                          child: Container(
-                            decoration: const BoxDecoration(
-                              border: Border(
-                                bottom: BorderSide(color: Colors.grey),
-                              ),
-                              shape: BoxShape.rectangle,
-                            ),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                DropdownButtonFormField<String>(
-                                  items: <String>['Name 1', 'Name 2', 'Name 3']
-                                      .map<DropdownMenuItem<String>>(
-                                          (String value) {
-                                    return DropdownMenuItem<String>(
-                                      value: value,
-                                      child: Text(value),
-                                    );
-                                  }).toList(),
-                                  decoration: const InputDecoration(
-                                    labelText: 'Name',
-                                    border: InputBorder.none,
-                                    contentPadding:
-                                        EdgeInsets.symmetric(horizontal: 10),
-                                  ),
-                                  onChanged: (String? value) {
-                                    // Handle name selection
-                                  },
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                        const SizedBox(width: 10),
-                        Expanded(
-                          child: Container(
-                            decoration: const BoxDecoration(
-                              border: Border(
-                                bottom: BorderSide(color: Colors.grey),
-                              ),
-                              shape: BoxShape.rectangle,
-                            ),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                TextFormField(
-                                  decoration: const InputDecoration(
-                                    labelText: 'Amount',
-                                    border: InputBorder.none,
-                                    contentPadding:
-                                        EdgeInsets.symmetric(horizontal: 10),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                    const SizedBox(height: 10),
-                    Container(
-                      height: 100,
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                            color: Colors.grey), // Add border on all sides
-                        borderRadius: BorderRadius.circular(
-                            8), // Add border radius if desired
-                      ),
-                      child: TextField(
-                        style: const TextStyle(fontSize: 14),
-                        decoration: const InputDecoration(
-                          labelText: 'Description',
-                          border: InputBorder.none,
-                          contentPadding: EdgeInsets.symmetric(horizontal: 10),
-                        ),
-                        cursorColor: Colors.blue,
-                        cursorWidth: 1.5,
-                        cursorRadius: const Radius.circular(1.5),
-                        onChanged: (value) {
-                          // Handle input changes
-                        },
-                        onSubmitted: (value) {
-                          // Handle form submission
-                        },
-                      ),
-                    ),
-                    const SizedBox(height: 20),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        ElevatedButton(
-                          onPressed: () {
-                            // Handle submit
-                          },
-                          child: const Text('Submit'),
-                        ),
-                        const SizedBox(width: 10),
-                        ElevatedButton(
-                          onPressed: () {
-                            Navigator.pop(context); // Close the modal
-                          },
-                          child: const Text('Cancel'),
-                        ),
-                      ],
-                    ),
+                    // Modal content
+                    // ...
                   ],
                 ),
               ),
             ),
           ),
-        ));
+        );
       },
     );
   }
@@ -394,6 +220,34 @@ class HomePage extends StatelessWidget {
             ],
           ),
         ),
+      ),
+    );
+  }
+}
+
+class SettingsPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Settings'),
+      ),
+      body: const Center(
+        child: Text('Settings Page'),
+      ),
+    );
+  }
+}
+
+class ProjectPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Project'),
+      ),
+      body: const Center(
+        child: Text('Project Page'),
       ),
     );
   }

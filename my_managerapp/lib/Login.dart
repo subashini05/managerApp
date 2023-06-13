@@ -74,12 +74,44 @@ class _LoginPageState extends State<LoginPage> {
           children: [
             Column(
               children: [
-                Container(
-                  alignment: Alignment.center,
-                  child: Image.asset(
-                    'lib/assets/images/Ellipse_7.png',
-                    height: 120,
-                  ),
+                SizedBox(
+                  height: 220,
+                  child: Stack(children: [
+                    Positioned(
+                        left: 260,
+                        top: 100,
+                        child: Image.asset('lib/assets/images/Ellipse_7.png')),
+                    Positioned(
+                        left: 250,
+                        top: 1,
+                        //bottom: 83,
+                        //right: -6.67,
+                        child: Image.asset('lib/assets/images/Ellipse_6.png')),
+                    Positioned(
+                        left: 250,
+                        top: 110,
+                        child: Image.asset('lib/assets/images/cross.png')),
+                    Positioned(
+                        left: 80,
+                        top: 97,
+                        child: Image.asset('lib/assets/images/circle.png')),
+                    Positioned(
+                        left: 62,
+                        top: 177,
+                        child: Image.asset('lib/assets/images/Path_121.png')),
+                    Positioned(
+                        left: 95,
+                        top: 140,
+                        child: Image.asset('lib/assets/images/Path_122.png')),
+                    Positioned(
+                        left: 60,
+                        top: 158,
+                        child: Image.asset('lib/assets/images/Path_123.png')),
+                    Positioned(
+                        left: 60,
+                        top: 140,
+                        child: Image.asset('lib/assets/images/Path_124.png')),
+                  ]),
                 ),
                 Expanded(
                   child: SingleChildScrollView(
